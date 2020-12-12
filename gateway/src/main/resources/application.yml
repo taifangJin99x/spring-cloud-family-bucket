@@ -7,6 +7,9 @@ spring:
   application:
     name: gateway
   cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
     gateway:
       routes:
         - id: user-service-route

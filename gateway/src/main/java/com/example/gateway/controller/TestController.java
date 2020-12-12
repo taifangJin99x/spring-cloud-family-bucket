@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping(value = "test")
-    public Object test(Authentication authentication){
-        return authentication.getPrincipal();
+    public Object test(){
+        return "test";
     }
 }

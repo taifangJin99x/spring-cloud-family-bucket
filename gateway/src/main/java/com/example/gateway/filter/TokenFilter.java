@@ -32,15 +32,15 @@ public class TokenFilter implements GlobalFilter, Ordered {
        为了演示方便，我就判断了它的参数
          */
         ServerHttpRequest request = exchange.getRequest();
-        List<HttpCookie> token = request.getCookies().get("SESSION");
+        List<HttpCookie> token = request.getCookies().get("token");
 
-        if (token.isEmpty()) {
-            //不允许访问，禁止访问
-            ServerHttpResponse response = exchange.getResponse();
-            response.setStatusCode(HttpStatus.NOT_ACCEPTABLE); //这个状态码是406
-
-            return exchange.getResponse().setComplete();
-        }
+//        if (token == null || token.isEmpty()) {
+//            //不允许访问，禁止访问
+//            ServerHttpResponse response = exchange.getResponse();
+//            response.setStatusCode(HttpStatus.NOT_ACCEPTABLE); //这个状态码是406
+//
+//            return exchange.getResponse().setComplete();
+//        }
         //放行
         return chain.filter(exchange);
     }
