@@ -1,4 +1,4 @@
-package com.example.gateway.utils;
+package com.example.account.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
