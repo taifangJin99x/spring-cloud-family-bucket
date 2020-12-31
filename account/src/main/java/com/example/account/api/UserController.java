@@ -1,6 +1,7 @@
 package com.example.account.api;
 
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.example.account.client.GatewayService;
 import com.example.account.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+    @NacosValue(value = "${nacos.test.propertie:1}", autoRefreshed = true)
+    private String applicationName;
     @Autowired
     GatewayService gatewayService;
     @Autowired
@@ -25,7 +28,7 @@ public class UserController {
     @GetMapping("/getUser")
     public String getUser() {
 
-        return userService.getUser();
+        return applicationName;
     }
     @GetMapping("/client")
     public String client() {
