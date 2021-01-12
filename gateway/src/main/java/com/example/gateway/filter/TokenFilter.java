@@ -41,15 +41,15 @@ public class TokenFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
 
-        Boolean check = accountService.checkToken(request.getHeaders().getFirst("cookie"));
-        if (check || request.getURI().getPath().equals("/api/user/user/login")){
+//        Boolean check = accountService.checkToken(request.getHeaders().getFirst("cookie"));
+//        if (check || request.getURI().getPath().equals("/api/user/user/login")){
             //放行
             return chain.filter(exchange);
-        }
-        response.setStatusCode(HttpStatus.UNAUTHORIZED);
-        byte[] bytes = "{\"status\":\"-1\",\"msg\":\"error\"}".getBytes(StandardCharsets.UTF_8);
-        DataBuffer buffer = exchange.getResponse().bufferFactory().wrap(bytes);
-        return exchange.getResponse().writeWith(Flux.just(buffer));
+//        }
+//        response.setStatusCode(HttpStatus.UNAUTHORIZED);
+//        byte[] bytes = "{\"status\":\"-1\",\"msg\":\"error\"}".getBytes(StandardCharsets.UTF_8);
+//        DataBuffer buffer = exchange.getResponse().bufferFactory().wrap(bytes);
+//        return exchange.getResponse().writeWith(Flux.just(buffer));
     }
 
     @Override

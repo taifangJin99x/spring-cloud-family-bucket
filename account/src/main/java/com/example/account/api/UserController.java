@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.example.account.client.GatewayService;
 import com.example.account.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
  * @version: 1.0
  * @todo:
  */
+@Slf4j
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -27,7 +29,7 @@ public class UserController {
     UserService userService;
     @GetMapping("/getUser")
     public String getUser() {
-
+        log.info("TEST");
         return applicationName;
     }
     @GetMapping("/client")

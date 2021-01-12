@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab17e3f0-1fd9-499f-bcb9-471e07742081" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/order/orderservice/api/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/order/orderservice/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/order/orderservice/repository/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/order/orderservice/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage-service/src/main/java/com/example/storageservice/api/StorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage-service/src/main/java/com/example/storageservice/client/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage-service/src/main/java/com/example/storageservice/entity/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage-service/src/main/java/com/example/storageservice/repository/StorageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage-service/src/main/java/com/example/storageservice/service/StorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/account.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/example/account/AccountApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/example/account/AccountApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/src/main/java/com/example/account/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/example/account/api/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filter/TokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-family-bucket.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -31,8 +46,8 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\work\java\maven\repository" />
-        <option name="mavenHome" value="D:\work\apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\work\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="mavenHome" value="D:\work\java\maven\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\work\java\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -52,7 +67,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../spring-cloud-family-bucket" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage-service/src/main/java/com/example/storageservice" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
@@ -60,27 +78,26 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\java\code\spring-cloud-family-bucket\storage-service\src\main\java\com\example\storageservice" />
       <recent name="D:\work\java\code\spring-cloud-family-bucket\account\src\main\java\com\example\account" />
       <recent name="D:\work\java\code\spring-cloud-family-bucket\gateway\src\main\java\com\example\gateway" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.storageservice.client" />
       <recent name="com.example.gateway.config" />
       <recent name="com.example.gateway.utils" />
       <recent name="com.example.account.controller" />
       <recent name="com.example.gateway.filter" />
-      <recent name="com.example.gateway.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.StorageServiceApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,9 +116,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order.orderservice.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="register-center" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.register.RegisterCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="storage-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.storageservice.StorageServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,6 +156,11 @@
       <workItem from="1609208165982" duration="11129000" />
       <workItem from="1609228458351" duration="2576000" />
       <workItem from="1609231478132" duration="22845000" />
+      <workItem from="1609463710866" duration="11657000" />
+      <workItem from="1610361082635" duration="133000" />
+      <workItem from="1610361331035" duration="443000" />
+      <workItem from="1610418194940" duration="601000" />
+      <workItem from="1610429512461" duration="8890000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1607653247814</created>
@@ -202,19 +238,25 @@
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filter/TokenFilter.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/account/src/main/java/com/example/account/api/UserController.java</url>
-          <line>41</line>
+          <line>43</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="feign.FeignException$NotFound" package="feign" />
-          <option name="timeStamp" value="36" />
-        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filter/TokenFilter.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filter/TokenFilter.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/example/order/orderservice/api/OrderController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
